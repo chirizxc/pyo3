@@ -629,7 +629,7 @@ class C:
     #[test]
     fn pylong_export() {
         Python::attach(|py| {
-            if !is_30bit_layout() {
+            if !is_30bit_layout(py) {
                 return;
             }
 
